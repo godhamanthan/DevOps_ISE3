@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'docker build -t yourusername/prime-numbers-app .'
+                sh 'docker build -t godhamanthan/prime-numbers-app .'
             }
         }
         
         stage('Push') {
             steps {
-                sh 'docker push yourusername/prime-numbers-app'
+                sh 'docker push godhamanthan/prime-numbers-app'
             }
         }
     }
